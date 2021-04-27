@@ -1,0 +1,4 @@
+rootProject.name = 'falcon'
+
+include 'falcon-base'
+include 'falcon-web'

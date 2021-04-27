@@ -1,0 +1,15 @@
+plugins {
+	id 'java'
+}
+
+group = 'com.fameoflight'
+version = '1.0.0'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+}
+

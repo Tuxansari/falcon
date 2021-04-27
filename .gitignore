@@ -18,7 +18,6 @@ dist/
 
 # Package files
 *.jar
-*.gradle
 *.idea
 # Maven
 target/
