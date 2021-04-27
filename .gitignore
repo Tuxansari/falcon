@@ -18,12 +18,13 @@ dist/
 
 # Package files
 *.jar
-
+*.gradle
+*.idea
 # Maven
 target/
 dist/
-falcon-web/build
-falcon-base/build
+*/build
+*/build
 # JetBrains IDE
 .idea/
 
