@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: falcon
+  profiles:
+      active: dev
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/clz_db
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+logging:
+  level:
+    com.netflix: WARN
+    com.sprigframework.web: WARN
+
+server:
+  port: 8080
+  tomcat:
+    accept-count: 100
+    accesslog:
+      enabled: true
+      pattern: '%h %l %u %I %t "%r" %s %b (%D ms)'
+      prefix: falcon-log
+    basedir: log
+    max-connections: 1000
+    max-threads: 300
+    min-spare-threads: 50
