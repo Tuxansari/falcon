@@ -32,3 +32,13 @@ server:
     max-connections: 1000
     max-threads: 300
     min-spare-threads: 50
+
+
+catalog:
+  baseUrl: http://localhost:8081/catalog/
+  productUrl: 'product/%s'
+  socketTimeout: 5000
+  connectionTimeout: 5000
+  maxTotalConnections: 100
+  defaultMaxConnectionsPerHost: 100
+  validateAfterInactivity: 5000
